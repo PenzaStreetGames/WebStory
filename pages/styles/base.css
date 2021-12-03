@@ -1,0 +1,89 @@
+:root {
+    --panelColor: #3f51b5;
+    --borderRadius: 1vw;
+    --darkPrimaryColor: #303F9F;
+    --lightPrimaryColor: #BDBDBD;
+    --linkHowerColor: #448AFF;
+}
+
+#wrapper {
+    height: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p, a {
+    text-align: justify;
+}
+
+a:hover {
+    color: var(--linkHowerColor);
+}
+
+@media (min-width: 1200px) {
+    header {
+        font-size: 32px;
+    }
+    footer {
+        font-size: 24px;
+    }
+    p, a {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    header {
+        font-size: 28px;
+    }
+    footer {
+        font-size: 20px;
+    }
+    p, a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        font-size: 24px;
+    }
+    footer {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+
+header, footer {
+    background-color: var(--darkPrimaryColor);
+    border-radius: var(--borderRadius);
+    color: var(--lightPrimaryColor);
+    width: 99%;
+    padding: 1vw;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main {
+    box-sizing: border-box;
+    min-height: 80vh;
+}

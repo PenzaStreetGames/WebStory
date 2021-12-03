@@ -1,0 +1,11 @@
+#codeFont {
+    font-family: 'Source Code Pro', monospace;
+}
+
+#baseFont {
+    font-family: 'Comfortaa', sans-serif;
+}
+
+* {
+    font-family: 'Comfortaa', sans-serif;
+}
