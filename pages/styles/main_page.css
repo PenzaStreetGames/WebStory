@@ -2,9 +2,13 @@
     --backgroundColor: #ffe0b2;
     --textColor: #BDBDBD;
     --panelColor: #3f51b5;
-    --secondPanelColor: #37474f;
+    --secondPanelColor: rgba(55, 71, 79, 0.7);
     --thirdPanelColor: #546e7a;
+    --iconBackgroungColor: #BDBDBD;
+    --iconBackgroungHoverColor: #FFFFFF;
     --borderRadius: 1vw;
+    --buttonColor: #448AFF;
+    --quickAnimationTime: 0.5s;
 }
 
 * {
@@ -24,11 +28,85 @@ div.panel {
     border-radius: var(--borderRadius);
     padding: 1vw;
     margin: 1vw;
-    opacity: 80%;
-    transition: 1s;
+    transition: var(--quickAnimationTime);
 }
 
 div.choose:hover {
     background-color: var(--thirdPanelColor);
-    transition: 1s;
+    width: 24vw;
+    height: 24vw;
+    margin: 0vw;
+    transition: 0.5s;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.card_list {
+    align-self: center;
+    display: flex;
+    width: 90vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    width: 20vw;
+    height: 20vw;
+    margin: 4vw;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    cursor: pointer;
+}
+
+.card_name {
+    grid-area: 1 / 1 / span 1 / span 4;
+    margin-top: 5%;
+    vertical-align: center;
+    text-align: center;
+}
+
+.project_icon_panel {
+    grid-area: 2 / 1 / span 2 / span 4;
+    display: flex;
+    justify-content: center;
+}
+
+.project_icon {
+    width: auto;
+    height: 90%;
+    border-radius: var(--borderRadius);
+    background-color: transparent;
+}
+
+.tech_icon {
+    width: 90%;
+    grid-row: 4 /  span 1;
+    grid-column: span 1;
+    height: auto;
+    background-color: var(--iconBackgroungColor);
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    transition: var(--quickAnimationTime);
+}
+
+.tech_icon:hover {
+    background-color: var(--iconBackgroungHoverColor);
+    transition: var(--quickAnimationTime);
+}
+
+.author_photo {
+    width: 20vw;
+    height: 25vw;
+    object-fit: cover;
+    border-radius: var(--borderRadius);
+}
+
+.more_button_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }

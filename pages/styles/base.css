@@ -4,6 +4,7 @@
     --darkPrimaryColor: #303F9F;
     --lightPrimaryColor: #BDBDBD;
     --linkHowerColor: #448AFF;
+    --quickAnimationTime: 0.5s;
 }
 
 #wrapper {
@@ -18,7 +19,7 @@
     box-sizing: border-box;
 }
 
-p, a {
+p, a, span {
     text-align: justify;
 }
 
@@ -26,14 +27,26 @@ a:hover {
     color: var(--linkHowerColor);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 2000px) {
+    header {
+        font-size: 48px;
+    }
+    footer {
+        font-size: 36px;
+    }
+    p, a, span {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 2000px) {
     header {
         font-size: 32px;
     }
     footer {
         font-size: 24px;
     }
-    p, a {
+    p, a, span {
         font-size: 18px;
     }
 }
@@ -45,20 +58,20 @@ a:hover {
     footer {
         font-size: 20px;
     }
-    p, a {
+    p, a, span {
         font-size: 16px;
     }
 }
 
 @media (max-width: 768px) {
     header {
-        font-size: 24px;
+        font-size: 2vh;
     }
     footer {
-        font-size: 18px;
+        font-size: 1vh;
     }
-    p {
-        font-size: 14px;
+    p, a, span {
+        font-size: 1vh;
     }
 }
 
@@ -78,12 +91,65 @@ header {
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     text-align: center;
 }
 
 main {
     box-sizing: border-box;
-    min-height: 80vh;
+    min-height: 90vh;
+}
+
+button {
+    padding: 1vw;
+    border-style: none;
+    border-radius: var(--borderRadius);
+    background-color: var(--buttonColor);
+    transition: ease-in-out var(--quickAnimationTime);
+}
+
+button:hover {
+    padding: 1.2vw;
+}
+
+button a {
+    color: var(--darkPrimaryColor);
+    transition: var(--quickAnimationTime);
+}
+
+button a:hover {
+    color: white;
+    transition: var(--quickAnimationTime);
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_row * {
+    margin: 1vw;
+}
+
+.link_icons_list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.link_icon {
+    width: 3vw;
+    height: auto;
+    border-radius: var(--borderRadius);
+    padding: 0.5vw;
+}
+
+.footer_flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer_flex span {
+    padding: 0.5vw;
 }

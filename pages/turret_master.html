@@ -3,8 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SourceCodePro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/main_page.css">
+    <link rel="stylesheet" href="styles/slider.css">
 </head>
 <body>
-
+<div id="wrapper">
+    <header>
+        WebStory Портфолио
+    </header>
+    <main>
+        <div class="panel">
+            <h1>Turret Master</h1>
+            <p></p>
+        </div>
+        <div class="panel">
+            <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/">
+            <div id="captioned-gallery">
+                <figure class="slider">
+                    <figure>
+                        <img src="hobbiton-lake.jpg" alt>
+                        <figcaption>Hobbiton, New Zealand</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="wanaka-drowned-tree.jpg" alt>
+                        <figcaption>Wanaka, New Zealand</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="utah-peak.jpg" alt>
+                        <figcaption>Utah, United States</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="bryce-canyon-utah.jpg" alt>
+                        <figcaption>Bryce Canyon, Utah, United States</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="hobbiton-lake.jpg" alt>
+                        <figcaption>Hobbiton, New Zealand</figcaption>
+                    </figure>
+                </figure>
+            </div>
+        </div>
+        <div class="panel">
+            <h2>Стек технологий</h2>
+        </div>
+        <div class="panel">
+            <h2>История создания и авторы</h2>
+        </div>
+        <div class="panel">
+            <h2>Перспективы и комментарий автора</h2>
+        </div>
+    </main>
+    <footer>
+        (с) Павел Соломатин 2021 год. Все права защищены
+    </footer>
+</div>
+<script>
+    function goToPage(url) {
+        document.location.href = url;
+    }
+</script>
 </body>
 </html>
