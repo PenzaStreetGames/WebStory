@@ -1,0 +1,37 @@
+@media (max-width: 768px)  {
+    p, a, b, span, figcaption, blockquote, label, input, button {
+        font-size: 48px;
+    }
+    header *, h1 {
+        font-size: 28px;
+    }
+    footer *, h2 {
+        font-size: 20px;
+    }
+    .flex_row {
+        flex-direction: column;
+    }
+
+    .content {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    p, a, b, span, figcaption, blockquote, label, input, button {
+        font-size: 16px;
+    }
+    header *, h1 {
+        font-size: 28px;
+    }
+    footer *, h2 {
+        font-size: 20px;
+    }
+    .flex_row {
+        flex-direction: column;
+    }
+    .content {
+        font-size: 20px;
+    }
+}
