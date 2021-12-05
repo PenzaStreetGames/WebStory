@@ -43,22 +43,47 @@
                         сам по себе является отчётностью.
                     </p>
                     <p>
+                        На часах <span class="clock_row"></span>, а это значит что мне уже <span class="age_row"></span> лет.
+                        Какой же я пожилой.
                     </p>
                 </div>
             </div>
         </div>
-        <div class="panel">
+        <div class="panel donate">
             <h2>Пожертвования</h2>
             <p>Если хотите поддержать меня в моих творческих начинаниях, напишите мне в личку приятное сообщение.</p>
             <p>Если у вас не хватает фантазии на приятное сообщение в личку, заполните и отправьте форму ниже</p>
         </div>
-        <form class="bank_card_div">
-            <label for="card_number">Номер карты</label><input id="card_number" type="text">
-            <label for="valid_month">Месяц</label><input id="valid_month" type="text">
-            <label for="valid_year">Год</label><input id="valid_year" type="text">
-            <label for="cvv">CVV</label><input id="cvv" type="text">
-            <button type="submit">Задонатить</button>
-        </form>
+        <div class="bank_card_div">
+            <div class="bank_card_form_div">
+                <form class="bank_card_form">
+                    <h2>Донаты</h2>
+                    <div id="sum_div">
+                        <label id="sum_label" for="sum">Сумма</label>
+                        <input placeholder="Больше ноликов" id="sum" type="text" onkeydown="attemptIncrement()">
+                    </div>
+                    <div id="card_number_div">
+                        <label id="card_number_label" for="card_number">Номер карты</label>
+                        <input placeholder="4000 0000 0000 0000" id="card_number" type="text" onkeydown="attemptIncrement()">
+                    </div>
+                    <div id="valid_month_div">
+                        <label id="valid_month_label" for="valid_month">Месяц</label>
+                        <input placeholder="MM" id="valid_month" type="text" onkeydown="attemptIncrement()">
+                    </div>
+                    <div id="valid_year_div">
+                        <label id="valid_year_label" for="valid_year">Год</label>
+                        <input placeholder="YY" id="valid_year" type="text" onkeydown="attemptIncrement()">
+                    </div>
+                    <div id="cvv_div">
+                        <label id="cvv_label" for="cvv">CVV</label>
+                        <input placeholder="***" id="cvv" type="text" onkeydown="attemptIncrement()">
+                    </div>
+                    <button id="submit_button" onclick="attemptIncrement()">
+                        Задонатить
+                    </button>
+                </form>
+            </div>
+        </div>
     </main>
     <nav class="panel">
         <div class="pages_list_header">
@@ -122,5 +147,7 @@
         document.location.href = url;
     }
 </script>
+<script src="scripts/donate.js"></script>
+<script src="scripts/clock.js"></script>
 </body>
 </html>

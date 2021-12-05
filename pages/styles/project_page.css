@@ -22,7 +22,7 @@
 }
 
 .tech_card span {
-    display: none;
+    font-size: 0;
     padding: 0.5vw;
     transition: var(--quickAnimationTime);
     color: var(--secondPanelColor);
@@ -33,7 +33,7 @@
 }
 
 .tech_card:hover span {
-    display: inline;
+    font-size: 1vw;
     transition: var(--quickAnimationTime);
 }
 

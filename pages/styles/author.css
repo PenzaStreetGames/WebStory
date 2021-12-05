@@ -1,0 +1,96 @@
+.bank_card_div {
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.bank_card_form_div {
+    width: 36vw;
+    height: 20vw;
+    background-color: #4CAF50;
+    border-radius: var(--borderRadius);
+    padding: 2vw;
+}
+
+.bank_card_form {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+}
+
+.bank_card_form label, .bank_card_form h2 {
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.bank_card_form input {
+    border: none;
+    height: 2vw;
+    border-radius: var(--borderRadius);
+    padding: 0.5vw;
+    margin: 0.5vw;
+    color: var(--primaryTextColor);
+    box-shadow: var(--mediumShadow);
+}
+
+#submit_button {
+    margin: 10px;
+    grid-area: 4 / 4 / span 1 / span 1;
+    background-color: #59cb5d;
+    color: white;
+    box-shadow: var(--mediumShadow);
+}
+
+#submit_button:hover {
+    padding: 1vw;
+}
+
+#card_number_div {
+    grid-area: 2 / 1 / span 1 / span 4;
+}
+
+#valid_month_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 3 / 1 / span 1 / span 1;
+}
+
+#valid_year_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 3 / 2 / span 1 / span 1;
+}
+
+#cvv_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: 3 / 4 / span 1 / span 1;
+}
+
+#sum_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1 / 3 / span 1 / span 2;
+}
+
+#cvv {
+    width: 3vw;
+}
+
+#valid_month {
+    width: 3vw;
+}
+#valid_year {
+    width: 3vw;
+}
+
+
+
