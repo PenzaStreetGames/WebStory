@@ -35,15 +35,6 @@ a:hover {
     color: var(--linkHowerColor);
 }
 
-p, a, b, span, figcaption, blockquote, label, input, button {
-    font-size: 24px;
-}
-header *, h1 {
-    font-size: 48px;
-}
-footer *, h2 {
-    font-size: 36px;
-}
 
 
 /*@media (max-width: 2000px) {*/

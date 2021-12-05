@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="styles/main_page.css">
     <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/project_page.css">
+    <link rel="stylesheet" href="styles/media.css">
 </head>
 <body>
 <div id="wrapper">
-    <header>
+    <header class="labels_list">
         <span>
         WebStory Портфолио
         </span>
@@ -35,15 +36,15 @@
                 <img class="project_icon" src="res/project_icons/yo_icon.png">
             </div>
             <div>
-                <h1>Yo</h1>
-                <span>Язык программирования</span>
+                <h1 class="label">Yo</h1>
+                <span class="content">Язык программирования</span>
             </div>
-            <a class="source_card" href="https://github.com/PenzaStreetGames/Yo">
+            <a class="source_card content" href="https://github.com/PenzaStreetGames/Yo">
                 <img class="source_img" src="res/tech_icons/github_icon.png">
                 Ссылка на исходники и релиз
             </a>
         </div>
-        <div class="panel slider_panel">
+        <div class="panel slider_panel content_list">
             <div id="captioned-gallery">
                 <figure class="slider">
                     <figure>
@@ -70,7 +71,7 @@
             </div>
         </div>
         <div class="panel">
-            <h2>Стек технологий</h2>
+            <h2 class="label">Стек технологий</h2>
             <div class="tech_list">
                 <div class="tech_card" onclick="goToPage('https://github.com/PenzaStreetGames/Yo')">
                     <img class="tech_img" src="res/tech_icons/github_icon.png">
@@ -87,44 +88,44 @@
             </div>
         </div>
         <div class="panel">
-            <h2>История создания и авторы</h2>
-            <p>Автор: Павел Соломатин</p>
-            <p>Активная разработка: 2019-2020 годы</p>
-            <p>
+            <h2 class="label">История создания и авторы</h2>
+            <p class="content">Автор: Павел Соломатин</p>
+            <p class="content">Активная разработка: 2019-2020 годы</p>
+            <p class="content">
                 Во время изучения языка программирования Python в Яндекс.Лицее автора посещали смешанные чувства.
                 С одной стороны, питон оказался простым и лаконичным языком. С другой, в нём было много странностей и
                 недоработок. Тогда-то и появилась идея создания собственного языка.
             </p>
-            <p>
+            <p class="content">
                 Весной 2019 года был написан транслятор языка в байт-код, и только летом была написана виртуальная машина,
                 способная его воспроизвести. К осени была готова и среда разработки YoCode.
             </p>
-            <p>
+            <p class="content">
                 Новым толчком в развитии идеи нового языка послужил транслятор из разметки на отступах в html - Yo Struct.
                 Он был написан в июне 2020 года.
             </p>
         </div>
         <div class="panel">
-            <h2>Перспективы и комментарий автора</h2>
-            <p>
+            <h2 class="label">Перспективы и комментарий автора</h2>
+            <p class="content">
                 Язык был реализован в минимальной рабочей версии и выполняет операции на уровне языка Паскаль. От том,
                 что виртуальная машина языка написана на Питоне, страшно думать, потому что производительность языка
                 очень резко падает по сравнению с другими языками.
             </p>
-            <p>
+            <p class="content">
                 Yo Struct имеет все шансы на дальнейшее развитие, так как следом за HTML предполагалось написать такие же
                 трансляторы для CSS и JavaScript. Этот набор технологий является идеей проекта ближнего будущего.
             </p>
-            <blockquote>
+            <blockquote class="content">
                 Объять необъятное. Много задач - один инструмент. В общем, не язык, а сказка.
             </blockquote>
         </div>
     </main>
     <nav class="panel">
         <div class="pages_list_header">
-            <h2>Страницы</h2>
+            <h2 class="label">Страницы</h2>
         </div>
-        <div class="pages_list">
+        <div class="pages_list content_list">
             <a href="../index.html">
                 Главная
             </a>
@@ -154,7 +155,7 @@
             </a>
         </div>
     </nav>
-    <footer>
+    <footer class="content_list">
         <span class="copyright">
         © Павел Соломатин 2021 год. Все права защищены
         </span>

@@ -33,13 +33,13 @@
 }
 
 .tech_card:hover span {
-    font-size: 1vw;
+    font-size: 24px;
     transition: var(--quickAnimationTime);
 }
 
 .tech_img {
-    width: 5vw;
-    height: 5vw;
+    width: 10vw;
+    height: 10vw;
 }
 
 .google_play_link {

@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="styles/main_page.css">
     <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/project_page.css">
+    <link rel="stylesheet" href="styles/media.css">
 </head>
 <body>
 <div id="wrapper">
-    <header>
+    <header class="labels_list">
         <span>
         WebStory Портфолио
         </span>
@@ -35,15 +36,15 @@
                 <img class="project_icon" src="res/project_icons/web_story_icon.png">
             </div>
             <div>
-                <h1>Web Story</h1>
-                <span>Сайт-портфолио для курсовой работы</span>
+                <h1 class="label">Web Story</h1>
+                <span class="content">Сайт-портфолио для курсовой работы</span>
             </div>
-            <a class="source_card" href="https://github.com/PenzaStreetGames/WebStory">
+            <a class="source_card content" href="https://github.com/PenzaStreetGames/WebStory">
                 <img class="source_img" src="res/tech_icons/github_icon.png">
                 Ссылка на исходники
             </a>
         </div>
-        <div class="panel slider_panel">
+        <div class="panel slider_panel content_list">
             <div id="captioned-gallery">
                 <figure class="slider">
                     <figure>
@@ -70,7 +71,7 @@
             </div>
         </div>
         <div class="panel">
-            <h2>Стек технологий</h2>
+            <h2 class="label">Стек технологий</h2>
             <div class="tech_list">
                 <div class="tech_card" onclick="goToPage('https://github.com/PenzaStreetGames/WebStory')">
                     <img class="tech_img" src="res/tech_icons/github_icon.png">
@@ -91,39 +92,39 @@
             </div>
         </div>
         <div class="panel">
-            <h2>История создания и авторы</h2>
-            <p>Авторы: Павел Соломатин</p>
-            <p>Активная разработка: 2021 год</p>
-            <p>
+            <h2 class="label">История создания и авторы</h2>
+            <p class="content">Авторы: Павел Соломатин</p>
+            <p class="content">Активная разработка: 2021 год</p>
+            <p class="content">
                 Проект создавался с целью защиты курсовой работы в третьем семестре обучения в бакалавриате. Дедлайн
                 сдачи отчёта стал известен за пол недели до его наступления. Были мобилизованы силы для его написания и
                 всё в итоге написано, хотя это и сказалось на его качестве. На момент написания, чем кончится эта
                 история - непонятно.
             </p>
-            <p>
+            <p class="content">
                 Эта страница является рекурсивной ссылкой на проект внутри самого себя.
             </p>
         </div>
         <div class="panel">
-            <h2>Перспективы и комментарий автора</h2>
-            <p>
+            <h2 class="label">Перспективы и комментарий автора</h2>
+            <p class="content">
                 Главной перспективой развития проекта является совершенствования анимаций, стилизации и адаптивности.
                 Пока что все три пункта находятся на стадии глубокой разработки.
             </p>
-            <p>
+            <p class="content">
                 Для отчётных проектов прослеживается тенденция к более быстрому их написанию и некоторой мимолётности,
                 с которой, видимо, ничего нельзя поделать, в ускоряющемся ритме работы.
             </p>
-            <blockquote>
+            <blockquote class="content">
                 У других и не такое принимали
             </blockquote>
         </div>
     </main>
     <nav class="panel">
         <div class="pages_list_header">
-            <h2>Страницы</h2>
+            <h2 class="label">Страницы</h2>
         </div>
-        <div class="pages_list">
+        <div class="pages_list content_list">
             <a href="../index.html">
                 Главная
             </a>
@@ -153,7 +154,7 @@
             </b>
         </div>
     </nav>
-    <footer>
+    <footer class="content_list">
         <span class="copyright">
         © Павел Соломатин 2021 год. Все права защищены
         </span>

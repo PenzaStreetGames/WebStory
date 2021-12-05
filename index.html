@@ -14,7 +14,7 @@
 </head>
 <body>
 <div id="wrapper">
-    <header>
+    <header class="labels_list">
         <span>
         WebStory Портфолио
         </span>
@@ -29,11 +29,11 @@
         </a>
     </header>
     <main>
-        <div class="panel">
-            <h1>Главная страница</h1>
+        <div class="panel label">
+            <h1 class="label">Главная страница</h1>
         </div>
         <div class="panel">
-            <h2>Обо мне</h2>
+            <h2 class="label">Обо мне</h2>
             <div class="flex_row">
                 <img class="author_photo" src="pages/res/images/author.png">
                 <div>
@@ -50,23 +50,23 @@
                 </div>
             </div>
             <div class="more_button_div">
-                <button>
+                <button class="content">
                     <a href="pages/author.html">Подробнее обо мне</a>
                 </button>
             </div>
         </div>
         <div class="panel">
-            <h2>О сайте</h2>
-            <p>За время своего знакомства с программированием было сделано много всяких разных проектов.
+            <h2 class="label">О сайте</h2>
+            <p class="content">За время своего знакомства с программированием было сделано много всяких разных проектов.
                 Ниже перечислен краткий список. При нажатии на заинтересовавший вас проект можно почитать о нём
                 поподробнее.</p>
-            <p>Внизу карточки каждого проекта есть список использованных технологий. Перейти на страницы репозиториев
+            <p class="content">Внизу карточки каждого проекта есть список использованных технологий. Перейти на страницы репозиториев
                 можно кликнув по иконке github. Прочие значки технологий ведут на их официальные страницы.</p>
         </div>
         <div id="projects_anchor" class="panel">
-            <h2>Проекты</h2>
+            <h2 class="label">Проекты</h2>
         </div>
-        <div class="card_list">
+        <div class="card_list labels_list">
             <div onclick="goToPage('pages/turret_master.html')" class="panel card choose">
                 <h2 class="card_name">Turret Master</h2>
                 <div class="project_icon_panel">
@@ -177,9 +177,9 @@
     </main>
     <nav class="panel">
         <div class="pages_list_header">
-            <h2>Страницы</h2>
+            <h2 class="label">Страницы</h2>
         </div>
-        <div class="pages_list">
+        <div class="pages_list content_list">
             <b>Главная</b>
             <a href="pages/author.html">
                 Об авторе
@@ -207,7 +207,7 @@
             </a>
         </div>
     </nav>
-    <footer>
+    <footer class="content_list">
         <span class="copyright">
         © Павел Соломатин 2021 год. Все права защищены
         </span>

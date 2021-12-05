@@ -16,7 +16,7 @@
 </head>
 <body>
 <div id="wrapper">
-    <header>
+    <header class="labels_list">
         <span>
         WebStory Портфолио
         </span>
@@ -32,10 +32,10 @@
     </header>
     <main>
         <div class="panel">
-            <h1>Об авторе</h1>
+            <h1 class="label">Об авторе</h1>
         </div>
         <div class="panel">
-            <h2>Обо мне</h2>
+            <h2 class="label">Обо мне</h2>
             <div class="flex_row">
                 <img class="author_photo" src="res/images/author.png">
                 <div>
@@ -53,7 +53,7 @@
             </div>
         </div>
         <div class="panel donate">
-            <h2>Пожертвования</h2>
+            <h2 class="label">Пожертвования</h2>
             <p class="content">Если хотите поддержать меня в моих творческих начинаниях, напишите мне в личку приятное сообщение.</p>
             <p class="content">Если у вас не хватает фантазии на приятное сообщение в личку, заполните и отправьте форму ниже</p>
         </div>
@@ -61,18 +61,18 @@
             <div class="bank_card_form_div">
                 <div class="bank_card_form">
                     <div class="flex_row">
-                        <h2>Донаты</h2>
-                        <div id="sum_div">
+                        <h2 class="label">Донаты</h2>
+                        <div id="sum_div content_list">
                             <label id="sum_label" for="sum">Сумма</label>
                             <input placeholder="Больше ноликов" id="sum" type="text" onkeydown="attemptIncrement()">
                         </div>
                     </div>
-                    <div id="card_number_div">
+                    <div id="card_number_div content_list">
                         <label id="card_number_label" for="card_number">Номер карты</label>
                         <input placeholder="4000 0000 0000 0000" id="card_number" type="text"
                                onkeydown="attemptIncrement()">
                     </div>
-                    <div class="flex_row">
+                    <div class="flex_row content_list">
                         <div id="valid_month_div">
                             <label id="valid_month_label" for="valid_month">Месяц</label>
                             <input placeholder="MM" id="valid_month" type="text" onkeydown="attemptIncrement()">
@@ -81,23 +81,23 @@
                             <label id="valid_year_label" for="valid_year">Год</label>
                             <input placeholder="YY" id="valid_year" type="text" onkeydown="attemptIncrement()">
                         </div>
-                        <div id="cvv_div">
+                        <div id="cvv_div content_list">
                             <label id="cvv_label" for="cvv">CVV</label>
                             <input placeholder="***" id="cvv" type="text" onkeydown="attemptIncrement()">
                         </div>
                     </div>
-                    <button id="submit_button" onclick="attemptIncrement()">
+                    <button id="submit_button" class="content" onclick="attemptIncrement()">
                         Задонатить
                     </button>
                 </div>
             </div>
         </div>
     </main>
-    <nav class="panel content_list">
+    <nav class="panel">
         <div class="pages_list_header">
-            <h2>Страницы</h2>
+            <h2 class="label">Страницы</h2>
         </div>
-        <div class="pages_list">
+        <div class="pages_list content_list">
             <a href="../index.html">
                 Главная
             </a>
@@ -127,7 +127,7 @@
             </a>
         </div>
     </nav>
-    <footer>
+    <footer class="content_list">
         <span class="copyright">
         © Павел Соломатин 2021 год. Все права защищены
         </span>

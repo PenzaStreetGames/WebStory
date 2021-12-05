@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="styles/main_page.css">
     <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/project_page.css">
+    <link rel="stylesheet" href="styles/media.css">
 </head>
 <body>
 <div id="wrapper">
-    <header>
+    <header class="labels_list">
         <span>
         WebStory Портфолио
         </span>
@@ -35,15 +36,15 @@
                 <img class="project_icon" src="res/project_icons/trigger_trap_icon.png">
             </div>
             <div>
-                <h1>Trigger Trap</h1>
-                <span>Игра в жанре RPG в стиле Pixel Art</span>
+                <h1 class="label">Trigger Trap</h1>
+                <span class="content">Игра в жанре RPG в стиле Pixel Art</span>
             </div>
-            <a class="source_card" href="https://play.google.com/store/apps/details?id=com.PenzaStreetGames.TurretMaster2">
+            <a class="source_card content" href="https://play.google.com/store/apps/details?id=com.PenzaStreetGames.TurretMaster2">
                 <img class="source_img" src="res/tech_icons/github_icon.png">
                 Ссылка на исходники и релиз
             </a>
         </div>
-        <div class="panel slider_panel">
+        <div class="panel slider_panel content_list">
             <div id="captioned-gallery">
                 <figure class="slider">
                     <figure>
@@ -70,7 +71,7 @@
             </div>
         </div>
         <div class="panel">
-            <h2>Стек технологий</h2>
+            <h2 class="label">Стек технологий</h2>
             <div class="tech_list">
                 <div class="tech_card" onclick="goToPage('https://github.com/PenzaStreetGames/TriggerTrap')">
                     <img class="tech_img" src="res/tech_icons/github_icon.png">
@@ -91,41 +92,41 @@
             </div>
         </div>
         <div class="panel">
-            <h2>История создания и авторы</h2>
-            <p>Авторы: Павел Соломатин и Павел Уланов</p>
-            <p>Активная разработка: 2021 год</p>
-            <p>
+            <h2 class="label">История создания и авторы</h2>
+            <p class="content">Авторы: Павел Соломатин и Павел Уланов</p>
+            <p class="content">Активная разработка: 2021 год</p>
+            <p class="content">
                 Игра была придумана в качестве выпускного проекта Samsung IT Academy в треке "Мобильная разработка"
                 Преподаватель настоятельно предупреждал, что игры на LibGDX для мобильных устройств будет писать нелегко.
                 Но идея была слишком хорошей, чтобы не попытаться её реализовать.
             </p>
-            <p>
+            <p class="content">
                 Основная часть игры была написана на майских праздниках 2021 года. Стоит заметить, что проект предлагалось
                 начать ещё в январе. Однако, жизнь студента расставляет приоритеты специфичным образом. До даты защиты
                 было реализовано всего ничего, но выглядело оно весьма сносно.
             </p>
         </div>
         <div class="panel">
-            <h2>Перспективы и комментарий автора</h2>
-            <p>
+            <h2 class="label">Перспективы и комментарий автора</h2>
+            <p class="content">
                 LibGDX оказалась слишком низкоуровневой графической библиотекой, чтобы реализовывать системы уровня
                 ролевой игры, поддерживающие кроссплатформенность.
             </p>
-            <p>
+            <p class="content">
                 Идея проекта была замечательной, потому что жизнь студента очень увлекательна и разнообразна. Но, увы,
                 единственной перспективой проекта является полное переписывание на движок Unity3D, на что потребуется
                 некоторое количество времени, которое не торопится появляться.
             </p>
-            <blockquote>
+            <blockquote class="content">
                 Из этого случая я извлёк один урок: не стоит совмещать творческие и отчётные проекты, получается ни то ни сё.
             </blockquote>
         </div>
     </main>
     <nav class="panel">
         <div class="pages_list_header">
-            <h2>Страницы</h2>
+            <h2 class="label">Страницы</h2>
         </div>
-        <div class="pages_list">
+        <div class="pages_list content_list">
             <a href="../index.html">
                 Главная
             </a>
@@ -153,7 +154,7 @@
             </a>
         </div>
     </nav>
-    <footer>
+    <footer class="content_list">
         <span class="copyright">
         © Павел Соломатин 2021 год. Все права защищены
         </span>

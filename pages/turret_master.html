@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="styles/main_page.css">
     <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/project_page.css">
+    <link rel="stylesheet" href="styles/media.css">
     <!--    <link rel="stylesheet" href="styles/slider_2.css">-->
 </head>
 <body>
 <div id="wrapper">
-    <header>
+    <header class="labels_list">
         <span>
         WebStory Портфолио
         </span>
@@ -36,14 +37,14 @@
                 <img class="project_icon" src="res/project_icons/turret_master_icon.png">
             </div>
             <div>
-                <h1>Turret Master</h1>
-                <span>Игра в жанре Tower Defence в стиле Pixel Art</span>
+                <h1 class="label">Turret Master</h1>
+                <span class="content">Игра в жанре Tower Defence в стиле Pixel Art</span>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.PenzaStreetGames.TurretMaster2">
+            <a class="content" href="https://play.google.com/store/apps/details?id=com.PenzaStreetGames.TurretMaster2">
                 <img class="google_play_link" src="res/projects/turret_master/google_play.png">
             </a>
         </div>
-        <div class="panel slider_panel">
+        <div class="panel slider_panel content_list">
             <div id="captioned-gallery">
                 <figure class="slider">
                     <figure>
@@ -108,7 +109,7 @@
 
 
         <div class="panel">
-            <h2>Стек технологий</h2>
+            <h2 class="label">Стек технологий</h2>
             <div class="tech_list">
                 <div class="tech_card" onclick="goToPage('https://unity.com/')">
                     <img class="tech_img" src="res/tech_icons/unity3d_icon.png">
@@ -121,30 +122,31 @@
             </div>
         </div>
         <div class="panel">
-            <h2>История создания и авторы</h2>
-            <p>Автор: Павел Соломатин</p>
-            <p>Активная разработка: 2017-2018 года</p>
-            <p>Идея игры появилась в июне 2017 года, после прохождения игры <a>"Космические Рейнджеры HD Революция"</a>,
+            <h2 class="label">История создания и авторы</h2>
+            <p class="content">Автор: Павел Соломатин</p>
+            <p class="content">Активная разработка: 2017-2018 года</p>
+            <p class="content">Идея игры появилась в июне 2017 года, после прохождения игры 
+                <a href="https://store.steampowered.com/app/214730/Space_Rangers_HD_A_War_Apart/">"Космические Рейнджеры HD Революция"</a>,
                 а именно, текстовым квестом в финале сюжета. Скромные познания автора в Unity помогли сделать первую
                 часть игры к середине августа того же года. Принятая товарищами на ура игра послужила поводом
                 для создания второй части.
             </p>
-            <p>
+            <p class="content">
                 Turret Master 2 был создан в июне-ноябре 2018 года. В игру добавились две новые турели, куча новых
                 врагов, таких как корабли и авиация, что уже позволяет конкурировать с WarThunder. Удивительно, но
                 после того, как игра была выложена в Google Play, она продолжает функционировать по сей день.
             </p>
         </div>
         <div class="panel">
-            <h2>Перспективы и комментарий автора</h2>
-            <p>На данный момент игра переживает кризис поддержки. Модули продолжают работать и часто тешат душу автора.
+            <h2 class="label">Перспективы и комментарий автора</h2>
+            <p class="content">На данный момент игра переживает кризис поддержки. Модули продолжают работать и часто тешат душу автора.
                 Однако, сколько игра просуществует в рабочем и общедоступном состоянии, остаётся только гадать.
             </p>
-            <p> Когда автор был моложе, он отшучивался, что в третьей части "Мастера турелей" будет трёхмерная графика,
+            <p class="content"> Когда автор был моложе, он отшучивался, что в третьей части "Мастера турелей" будет трёхмерная графика,
                 а солдаты и танки будут складываться из кубиков. Однако, время решило, что следует заняться чем-то
                 новым.
             </p>
-            <blockquote>
+            <blockquote class="content">
                 В игре в расчёты держатся на подсчёте кадров. Играть на мониторах с большой герцовкой
                 просто невозможно - игра идёт слишком быстро. Будем надеяться, что устройства с частотой обновления
                 кадров
@@ -154,9 +156,9 @@
     </main>
     <nav class="panel">
         <div class="pages_list_header">
-            <h2>Страницы</h2>
+            <h2 class="label">Страницы</h2>
         </div>
-        <div class="pages_list">
+        <div class="pages_list content_list">
             <a href="../index.html">
                 Главная
             </a>
@@ -184,7 +186,7 @@
             </a>
         </div>
     </nav>
-    <footer>
+    <footer class="content_list">
         <span class="copyright">
         © Павел Соломатин 2021 год. Все права защищены
         </span>

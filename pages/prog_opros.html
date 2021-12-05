@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="styles/main_page.css">
     <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/project_page.css">
+    <link rel="stylesheet" href="styles/media.css">
 </head>
 <body>
 <div id="wrapper">
-    <header>
+    <header class="labels_list">
         <span>
         WebStory Портфолио
         </span>
@@ -35,15 +36,15 @@
                 <img class="project_icon" src="res/project_icons/prog_opros_icon.png">
             </div>
             <div>
-                <h1>Prog Opros</h1>
-                <span>Исследование по результатам опроса программистов</span>
+                <h1 class="label">Prog Opros</h1>
+                <span class="content">Исследование по результатам опроса программистов</span>
             </div>
-            <a class="source_card" href="https://disk.yandex.ru/d/EIYBX4h7BNvM7w">
+            <a class="source_card content" href="https://disk.yandex.ru/d/EIYBX4h7BNvM7w">
                 <img class="source_img" src="res/tech_icons/yandex_disk_icon.png">
                 Ссылка на релиз
             </a>
         </div>
-        <div class="panel slider_panel">
+        <div class="panel slider_panel content_list">
             <div id="captioned-gallery">
                 <figure class="slider">
                     <figure>
@@ -70,7 +71,7 @@
             </div>
         </div>
         <div class="panel">
-            <h2>Стек технологий</h2>
+            <h2 class="label">Стек технологий</h2>
             <div class="tech_list">
                 <div class="tech_card" onclick="goToPage('https://github.com/PenzaStreetGames/ProgOpros')">
                     <img class="tech_img" src="res/tech_icons/github_icon.png">
@@ -87,40 +88,40 @@
             </div>
         </div>
         <div class="panel">
-            <h2>История создания и авторы</h2>
-            <p>Автор: Павел Соломатин</p>
-            <p>Активная разработка: 2019-2020 годы</p>
-            <p>
+            <h2 class="label">История создания и авторы</h2>
+            <p class="content">Автор: Павел Соломатин</p>
+            <p class="content">Активная разработка: 2019-2020 годы</p>
+            <p class="content">
                 Опрос являлся попыткой практического применения основ статистики, которые автор изучал в то время на
                 Степике. По каналам связи, оставшихся после Яндекс.Лицея и не только, было собрано больше 100 ответов.
                 Выборка так себе, но всё же.
             </p>
-            <p>
+            <p class="content">
                 Исследование было написано на языке R, и это было не самым лучшим технологическим решением. Хотя,
                 отчёт выглядит весьма сносно.
             </p>
         </div>
         <div class="panel">
-            <h2>Перспективы и комментарий автора</h2>
-            <p>
+            <h2 class="label">Перспективы и комментарий автора</h2>
+            <p class="content">
                 Данный проект не имеет каких-либо значимых перспектив. Повторное исследование было бы логичнее проводить
                 с помощью какого-либо более современного инструмента анализа данных, например, с помощью Питона и библиотеки
                 Pandas.
             </p>
-            <p>
+            <p class="content">
                 В отчёте по опросу было сформировано около 50 графиков с не совсем очевидными зависимостями. Не которые
                 из них стоят внимания читателя, некоторые не очень.
             </p>
-            <blockquote>
+            <blockquote class="content">
                 Странные люди эти программисты. И ответы у них интересные.
             </blockquote>
         </div>
     </main>
     <nav class="panel">
         <div class="pages_list_header">
-            <h2>Страницы</h2>
+            <h2 class="label">Страницы</h2>
         </div>
-        <div class="pages_list">
+        <div class="pages_list content_list">
             <a href="../index.html">
                 Главная
             </a>
@@ -150,7 +151,7 @@
             </a>
         </div>
     </nav>
-    <footer>
+    <footer class="content_list">
         <span class="copyright">
         © Павел Соломатин 2021 год. Все права защищены
         </span>

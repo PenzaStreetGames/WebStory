@@ -1,37 +1,38 @@
-@media (max-width: 768px)  {
-    p, a, b, span, figcaption, blockquote, label, input, button {
-        font-size: 48px;
-    }
-    header *, h1 {
-        font-size: 28px;
-    }
-    footer *, h2 {
-        font-size: 20px;
-    }
-    .flex_row {
-        flex-direction: column;
+@media (min-width: 1200px) {
+    .content, .content *, .content_list * {
+        font-size: 30px;
     }
 
-    .content {
-        font-size: 16px;
+    .label, .labels_list * {
+        font-size: 42px;
     }
-
 }
 
 @media (max-width: 1200px) {
-    p, a, b, span, figcaption, blockquote, label, input, button {
-        font-size: 16px;
-    }
-    header *, h1 {
-        font-size: 28px;
-    }
-    footer *, h2 {
-        font-size: 20px;
-    }
+
     .flex_row {
         flex-direction: column;
     }
-    .content {
-        font-size: 20px;
+    .content, .content *, .content_list * {
+        font-size: 30px;
     }
+
+    .label, .labels_list * {
+        font-size: 42px;
+    }
+}
+
+@media (max-width: 768px)  {
+    .flex_row {
+        flex-direction: column;
+    }
+
+    .content, .content_list * {
+        font-size: 24px;
+    }
+
+    .label, .labels_list * {
+        font-size: 36px;
+    }
+
 }

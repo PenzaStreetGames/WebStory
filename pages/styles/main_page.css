@@ -56,8 +56,8 @@ main {
 
 .card {
     width: 20vw;
-    min-width: 200px;
-    min-height: 200px;
+    min-width: 400px;
+    min-height: 400px;
     height: 20vw;
     margin: 2vw;
     display: grid;

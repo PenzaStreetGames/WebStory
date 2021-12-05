@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="styles/main_page.css">
     <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/project_page.css">
+    <link rel="stylesheet" href="styles/media.css">
 </head>
 <body>
 <div id="wrapper">
-    <header>
+    <header class="labels_list">
         <span>
         WebStory Портфолио
         </span>
@@ -35,15 +36,15 @@
                 <img class="project_icon" src="res/project_icons/text_quest_icon.png">
             </div>
             <div>
-                <h1>Quest Text</h1>
-                <span>Игра в жанре "Текстовый квест" в стиле Pixel Art</span>
+                <h1 class="label">Quest Text</h1>
+                <span class="content">Игра в жанре "Текстовый квест" в стиле Pixel Art</span>
             </div>
-            <a class="source_card" href="https://disk.yandex.ru/d/iUZ50j6nrZMZ7g">
+            <a class="source_card content" href="https://disk.yandex.ru/d/iUZ50j6nrZMZ7g">
                 <img class="source_img" src="res/tech_icons/yandex_disk_icon.png">
                 Ссылка на релиз
             </a>
         </div>
-        <div class="panel slider_panel">
+        <div class="panel slider_panel content_list">
             <div id="captioned-gallery">
                 <figure class="slider">
                     <figure>
@@ -70,7 +71,7 @@
             </div>
         </div>
         <div class="panel">
-            <h2>Стек технологий</h2>
+            <h2 class="label">Стек технологий</h2>
             <div class="tech_list">
                 <div class="tech_card" onclick="goToPage('https://github.com/PenzaStreetGames/bank_quest')">
                     <img class="tech_img" src="res/tech_icons/github_icon.png">
@@ -87,30 +88,30 @@
             </div>
         </div>
         <div class="panel">
-            <h2>История создания и авторы</h2>
-            <p>Авторы: Павел Соломатин, Алексей Медведев и Марк Лавов</p>
-            <p>Активная разработка: 2018 год</p>
-            <p>
+            <h2 class="label">История создания и авторы</h2>
+            <p class="content">Авторы: Павел Соломатин, Алексей Медведев и Марк Лавов</p>
+            <p class="content">Активная разработка: 2018 год</p>
+            <p class="content">
                 Проект "Квестовый текст" стал первым проектом из четырёх, написанных в Яндекс.Лицее. Игра создавалась в
                 предновогодней атмосфере декабря 2018 года. Внутри проекта обязанности были поделены таким образом,
                 что Леша отвечал за интерфейс, а Паша за сюжет. Марк помогал рисовать спрайты.
             </p>
-            <p>
+            <p class="content">
                 Релиз не был нигде опубликован, но доступен по ссылке на Яндекс.Диске. Стек технологий был выбран
                 таким образом, что игра будет запускаться на устройствах пользователя ближайшие 10 лет точно.
             </p>
         </div>
         <div class="panel">
-            <h2>Перспективы и комментарий автора</h2>
-            <p>
+            <h2 class="label">Перспективы и комментарий автора</h2>
+            <p class="content">
                 Информационная часть проекта была написана на JSON, поэтому при желании туда можно было бы добавить пару
                 комнат или фраз. Однако, никто в здравом рассудке этим заниматься не станет.
             </p>
-            <p>
+            <p class="content">
                 Проект самодостаточен и не нуждается в дополнении. Намного проще написать новый проект, чем переделать этот.
                 Несмотря на крайне малую адаптивность интерфейса, проект обладает своей неповторимой атмосферой.
             </p>
-            <blockquote>
+            <blockquote class="content">
                 Это был мой первый проект на питоне. Преподу зашло. Я им тоже в каком-то роде горжусь.
                 Слова "текстовый" и "квест" всё время путались местами. Так и получилось название.
             </blockquote>
@@ -118,9 +119,9 @@
     </main>
     <nav class="panel">
         <div class="pages_list_header">
-            <h2>Страницы</h2>
+            <h2 class="label">Страницы</h2>
         </div>
-        <div class="pages_list">
+        <div class="pages_list content_list">
             <a href="../index.html">
                 Главная
             </a>
@@ -150,7 +151,7 @@
             </a>
         </div>
     </nav>
-    <footer>
+    <footer class="content_list">
         <span class="copyright">
         © Павел Соломатин 2021 год. Все права защищены
         </span>

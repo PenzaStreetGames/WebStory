@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="styles/main_page.css">
     <link rel="stylesheet" href="styles/slider.css">
     <link rel="stylesheet" href="styles/project_page.css">
+    <link rel="stylesheet" href="styles/media.css">
 </head>
 <body>
 <div id="wrapper">
-    <header>
+    <header class="labels_list">
         <span>
         WebStory Портфолио
         </span>
@@ -35,15 +36,15 @@
                 <img class="project_icon" src="res/project_icons/red_dream_icon.png">
             </div>
             <div>
-                <h1>Red Dream</h1>
-                <span>Текстовый квест в навыке голосового помощника Алиса</span>
+                <h1 class="label">Red Dream</h1>
+                <span class="content">Текстовый квест в навыке голосового помощника Алиса</span>
             </div>
-            <a class="source_card" href="https://dialogs.yandex.ru/store/skills/08867441-krasnaya-mech">
+            <a class="source_card content" href="https://dialogs.yandex.ru/store/skills/08867441-krasnaya-mech">
                 <img class="source_img" src="res/tech_icons/alice_icon.png">
                 Ссылка на навык в каталоге Алисы
             </a>
         </div>
-        <div class="panel slider_panel">
+        <div class="panel slider_panel content_list">
             <div id="captioned-gallery">
                 <figure class="slider">
                     <figure>
@@ -70,7 +71,7 @@
             </div>
         </div>
         <div class="panel">
-            <h2>Стек технологий</h2>
+            <h2 class="label">Стек технологий</h2>
             <div class="tech_list">
                 <div class="tech_card" onclick="goToPage('https://github.com/PenzaStreetGames/RedDream/')">
                     <img class="tech_img" src="res/tech_icons/github_icon.png">
@@ -87,77 +88,43 @@
             </div>
         </div>
         <div class="panel">
-            <h2>История создания и авторы</h2>
-            <p>Авторы: Павел Соломатин, Алексей Медведев и Александр Смирнов</p>
-            <p>Активная разработка: 2019 год</p>
-            <p>
+            <h2 class="label">История создания и авторы</h2>
+            <p class="content">Авторы: Павел Соломатин, Алексей Медведев и Александр Смирнов</p>
+            <p class="content">Активная разработка: 2019 год</p>
+            <p class="content">
                 Проект "Красная мечта" создавался с целью защиты проекта по работе с API Яндекса. Можно было взять
                 и другие сервисы, но с Алисой было проще всего сделать игру. Механика навыка подобна игре
                 <a href="https://reignsgame.com/reigns/">Reigns</a>
                 где пользователю предлагается управлять государством, выбирая один из двух вариантов, меняющих важнейшие
                 показатели страны.
             </p>
-            <p>
+            <p class="content">
                 Сам навык запускается через Алису, голосовой командой: "Запусти навык "Красная мечта"".
                 Удивительно, но создатель ещё не каждый раз забывает продлевать срок работы бесплатного сервера. Именно
                 поэтому, навык всё ещё доступен для пользователей Алисы.
             </p>
         </div>
         <div class="panel">
-            <h2>Перспективы и комментарий автора</h2>
-            <p>
+            <h2 class="label">Перспективы и комментарий автора</h2>
+            <p class="content">
                 Навык был написан так, что его можно легко расширять и дополнять. И тут границы аддонов и дополнений
                 ограничиваются только двумя вещами: фантазией и ленью разработчика. Стоит отметить, что за последние годы
                 ни одного нового вопроса или сюжетного поворота в игру добавлено не было.
             </p>
-            <p>
+            <p class="content">
                 Существует также навык <a href="https://dialogs.yandex.ru/store/skills/2eb5d9cd-ave-cezar">"Славься, Цезарь"</a>
                 который даже взял одну из премий Алисы, и об этом есть
                 даже <a href="https://yandex.ru/blog/dialogs/premiya-alisy-luchshie-navyki-za-iyun">отдельная статья</a>,
                 но навык явно уступает по креативному наполнению "Красной мечте"
             </p>
-            <blockquote>
-                Если ничего не делать, слава уходит так же быстро, как и уходит
+            <blockquote class="content">
+                Если ничего не делать, слава уходит так же быстро, как и приходит
             </blockquote>
         </div>
-        <div class="panel">
-            <div class="pages_list_header">
-                <h2>Страницы</h2>
-            </div>
-            <div class="pages_list">
-                <a href="../index.html">
-                    Главная
-                </a>
-                <a href="author.html">
-                    Об авторе
-                </a>
-                <a href="turret_master.html">
-                    Turret Master
-                </a>
-                <a href="trigger_trap.html">
-                    Trigger Trap
-                </a>
-                <b>
-                    Red Dream
-                </b>
-                <a href="quest_text.html">
-                    Quest Text
-                </a>
-                <a href="yo.html">
-                    Yo
-                </a>
-                <a href="prog_opros.html">
-                    Prog Opros
-                </a>
-                <a href="web_story.html">
-                    Web Story
-                </a>
-            </div>
-        </div>
     </main>
-    <nav class="panel">
-        <div class="pages_list_header">
-            <h2>Страницы</h2>
+    <nav class="panel content_list">
+        <div class="pages_list_header content_list">
+            <h2 class="label">Страницы</h2>
         </div>
         <div class="pages_list">
             <a href="../index.html">
@@ -189,7 +156,7 @@
             </a>
         </div>
     </nav>
-    <footer>
+    <footer class="content_list">
         <span class="copyright">
         © Павел Соломатин 2021 год. Все права защищены
         </span>
