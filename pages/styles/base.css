@@ -2,9 +2,11 @@
     --panelColor: #3f51b5;
     --borderRadius: 1vw;
     --darkPrimaryColor: #303F9F;
+    --defaultPrimaryColor: #3F51B5;
     --lightPrimaryColor: #BDBDBD;
     --linkHowerColor: #448AFF;
     --quickAnimationTime: 0.5s;
+    --mediumShadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.2);
 }
 
 #wrapper {
@@ -19,7 +21,7 @@
     box-sizing: border-box;
 }
 
-p, a, span {
+p, a, b, span {
     text-align: justify;
 }
 
@@ -28,50 +30,68 @@ a:hover {
 }
 
 @media (min-width: 2000px) {
-    header {
+    p, a, b, span, figcaption, blockquote {
+        font-size: 24px;
+    }
+    header *, h1 {
         font-size: 48px;
     }
-    footer {
+    footer *, h2 {
         font-size: 36px;
-    }
-    p, a, span {
-        font-size: 24px;
     }
 }
 
 @media (min-width: 1200px) and (max-width: 2000px) {
-    header {
+    p, a, b, span, figcaption, blockquote {
+        font-size: 18px;
+    }
+    header *, h1 {
         font-size: 32px;
     }
-    footer {
+    footer *, h2 {
         font-size: 24px;
-    }
-    p, a, span {
-        font-size: 18px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
-    header {
+    p, a, b, span, figcaption, blockquote {
+        font-size: 16px;
+    }
+    header *, h1 {
         font-size: 28px;
     }
-    footer {
+    footer *, h2 {
         font-size: 20px;
-    }
-    p, a, span {
-        font-size: 16px;
     }
 }
 
-@media (max-width: 768px) {
-    header {
-        font-size: 2vh;
+@media (min-width: 400px) and (max-width: 768px) {
+    p, a, b, span, figcaption, blockquote {
+        font-size: 14px;
     }
     footer {
-        font-size: 1vh;
+        flex-direction: column;
     }
-    p, a, span {
-        font-size: 1vh;
+    header *, h1 {
+        font-size: 24px;
+    }
+    footer *, h2 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    footer *, h2 {
+        font-size: 16px;
+    }
+    footer {
+        flex-direction: column;
+    }
+    p, b, a, span, figcaption, blockquote {
+        font-size: 12px;
+    }
+    header *, h1 {
+        font-size: 20px;
     }
 }
 
@@ -80,13 +100,13 @@ header, footer {
     border-radius: var(--borderRadius);
     color: var(--lightPrimaryColor);
     width: 99%;
-    padding: 1vw;
 }
 
 header {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    padding: 1vw;
 }
 
 footer {
@@ -94,6 +114,12 @@ footer {
     justify-content: space-around;
     align-items: center;
     text-align: center;
+}
+
+header a {
+    padding: 0.5vw;
+    border-radius: var(--borderRadius);
+    background-color: var(--defaultPrimaryColor);
 }
 
 main {
@@ -139,17 +165,40 @@ button a:hover {
 
 .link_icon {
     width: 3vw;
+    min-width: 36px;
     height: auto;
     border-radius: var(--borderRadius);
-    padding: 0.5vw;
+    margin: 0.5vw;
 }
 
 .footer_flex {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    padding: 0.5vw 0.5vw 0;
 }
 
 .footer_flex span {
     padding: 0.5vw;
+    text-align: center;
+}
+
+.pages_list_header {
+    margin-top: -1vw;
+    margin-left: -1vw;
+    margin-right: -1vw;
+    background-color: var(--thirdPanelColor);
+    padding: 0.5vw 0.5vw 0.5vw 1vw;
+    border-radius: var(--borderRadius);
+}
+
+.pages_list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1vw;
+}
+
+.pages_list * {
+    margin: 0.5vw;
 }

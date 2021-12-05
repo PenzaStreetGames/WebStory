@@ -11,56 +11,161 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/main_page.css">
     <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/project_page.css">
 </head>
 <body>
 <div id="wrapper">
     <header>
+        <span>
         WebStory Портфолио
+        </span>
+        <a href="../index.html">
+            Главная
+        </a>
+        <a href="../index.html#projects_anchor">
+            Проекты
+        </a>
+        <a href="author.html">
+            Об авторе
+        </a>
     </header>
     <main>
-        <div class="panel">
-            <h1>Turret Master</h1>
-            <p></p>
+        <div class="panel project_preview">
+            <div class="project_icon_panel">
+                <img class="project_icon" src="res/project_icons/turret_master_icon.png">
+            </div>
+            <div>
+                <h1>Turret Master</h1>
+                <span>Игра в жанре Tower Defence в стиле Pixel Art</span>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.PenzaStreetGames.TurretMaster2">
+                <img class="google_play_link" src="res/projects/turret_master/google_play.png">
+            </a>
         </div>
-        <div class="panel">
-            <base href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/">
+        <div class="panel slider_panel">
             <div id="captioned-gallery">
                 <figure class="slider">
                     <figure>
-                        <img src="hobbiton-lake.jpg" alt>
-                        <figcaption>Hobbiton, New Zealand</figcaption>
+                        <img src="res/projects/turret_master/slides/slide1.jpg" alt>
+                        <figcaption>Система прокачки турелей и барьера с мастерской</figcaption>
                     </figure>
                     <figure>
-                        <img src="wanaka-drowned-tree.jpg" alt>
-                        <figcaption>Wanaka, New Zealand</figcaption>
+                        <img src="res/projects/turret_master/slides/slide2.jpg" alt>
+                        <figcaption>Битвы в режиме реального времени</figcaption>
                     </figure>
                     <figure>
-                        <img src="utah-peak.jpg" alt>
-                        <figcaption>Utah, United States</figcaption>
+                        <img src="res/projects/turret_master/slides/slide3.png" alt>
+                        <figcaption>Стройные ряды очень враждебно настроенных пикселей</figcaption>
                     </figure>
                     <figure>
-                        <img src="bryce-canyon-utah.jpg" alt>
-                        <figcaption>Bryce Canyon, Utah, United States</figcaption>
+                        <img src="res/projects/turret_master/slides/slide4.png" alt>
+                        <figcaption>Атака с воздуха, Перл Харбор 1941 год, фото в пикселях</figcaption>
                     </figure>
                     <figure>
-                        <img src="hobbiton-lake.jpg" alt>
-                        <figcaption>Hobbiton, New Zealand</figcaption>
+                        <img src="res/projects/turret_master/slides/slide5.png" alt>
+                        <figcaption>User-friendly интерфейс</figcaption>
                     </figure>
                 </figure>
             </div>
         </div>
         <div class="panel">
             <h2>Стек технологий</h2>
+            <div class="tech_list">
+                <div class="tech_card" onclick="goToPage('https://unity.com/')">
+                    <img class="tech_img" src="res/tech_icons/unity3d_icon.png">
+                    <span>Unity 3D</span>
+                </div>
+                <div class="tech_card" onclick="goToPage('https://docs.microsoft.com/ru-ru/dotnet/csharp/')">
+                    <img class="tech_img" src="res/tech_icons/c_sharp_icon.png">
+                    <span>С#</span>
+                </div>
+            </div>
         </div>
         <div class="panel">
             <h2>История создания и авторы</h2>
+            <p>Автор: Павел Соломатин</p>
+            <p>Активная разработка: 2017-2018 года</p>
+            <p>Идея игры появилась в июне 2017 года, после прохождения игры <a>"Космические Рейнджеры HD Революция"</a>,
+                а именно, текстовым квестом в финале сюжета. Скромные познания автора в Unity помогли сделать первую
+                часть игры к середине августа того же года. Принятая товарищами на ура игра послужила поводом
+                для создания второй части.
+            </p>
+            <p>
+                Turret Master 2 был создан в июне-ноябре 2018 года. В игру добавились две новые турели, куча новых
+                врагов, таких как корабли и авиация, что уже позволяет конкурировать с WarThunder. Удивительно, но
+                после того, как игра была выложена в Google Play, она продолжает функционировать по сей день.
+            </p>
         </div>
         <div class="panel">
             <h2>Перспективы и комментарий автора</h2>
+            <p>На данный момент игра переживает кризис поддержки. Модули продолжают работать и часто тешат душу автора.
+                Однако, сколько игра просуществует в рабочем и общедоступном состоянии, остаётся только гадать.
+            </p>
+            <p> Когда автор был моложе, он отшучивался, что в третьей части "Мастера турелей" будет трёхмерная графика,
+                а солдаты и танки будут складываться из кубиков. Однако, время решило, что следует заняться чем-то
+                новым.
+            </p>
+            <blockquote>
+                В игре в расчёты держатся на подсчёте кадров. Играть на мониторах с большой герцовкой
+                просто невозможно - игра идёт слишком быстро. Будем надеяться, что устройства с частотой обновления
+                кадров
+                в 60 Гц проживут ещё долго
+            </blockquote>
+        </div>
+        <div class="panel">
+            <div class="pages_list_header">
+                <h2>Страницы</h2>
+            </div>
+            <div class="pages_list">
+                <a href="../index.html">
+                    Главная
+                </a>
+                <a href="author.html">
+                    Об авторе
+                </a>
+                <b><span>Turret Master</span></b>
+                <a href="trigger_trap.html">
+                    Trigger Trap
+                </a>
+                <a href="red_dream.html">
+                    Red Dream
+                </a>
+                <a href="quest_text.html">
+                    Quest Text
+                </a>
+                <a href="yo.html">
+                    Yo
+                </a>
+                <a href="prog_opros.html">
+                    Prog Opros
+                </a>
+                <a href="web_story.html">
+                    Web Story
+                </a>
+            </div>
         </div>
     </main>
     <footer>
-        (с) Павел Соломатин 2021 год. Все права защищены
+        <span class="copyright">
+        © Павел Соломатин 2021 год. Все права защищены
+        </span>
+        <div class="footer_flex">
+            <span>Ищите меня в:</span>
+            <div class="link_icons_list">
+                <a href="https://github.com/PenzaStreetGames">
+                    <img class="link_icon" src="res/tech_icons/github_icon.png">
+                </a>
+                <a href="https://vk.com/crave_ozer_man">
+                    <img class="link_icon" src="res/link_icons/vk_icon.png">
+                </a>
+                <a href="https://t.me/crave_ozer_man/">
+                    <img class="link_icon" src="res/link_icons/telegram_icon.png">
+                </a>
+                <a href="https://www.instagram.com/craveozerman">
+                    <img class="link_icon" src="res/link_icons/instagram_icon.png">
+                </a>
+            </div>
+        </div>
     </footer>
 </div>
 <script>

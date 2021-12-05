@@ -3,8 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SourceCodePro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/main_page.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/project_page.css">
 </head>
 <body>
-
+<div id="wrapper">
+    <header>
+        <span>
+        WebStory Портфолио
+        </span>
+        <a href="../index.html">
+            Главная
+        </a>
+        <a href="../index.html#projects_anchor">
+            Проекты
+        </a>
+        <a href="author.html">
+            Об авторе
+        </a>
+    </header>
+    <main>
+        <div class="panel project_preview">
+            <div class="project_icon_panel">
+                <img class="project_icon" src="res/project_icons/yo_icon.png">
+            </div>
+            <div>
+                <h1>Yo</h1>
+                <span>Язык программирования</span>
+            </div>
+            <a class="source_card" href="https://github.com/PenzaStreetGames/Yo">
+                <img class="source_img" src="res/tech_icons/github_icon.png">
+                Ссылка на исходники и релиз
+            </a>
+        </div>
+        <div class="panel slider_panel">
+            <div id="captioned-gallery">
+                <figure class="slider">
+                    <figure>
+                        <img src="res/projects/yo/slides/slide1.png" alt>
+                        <figcaption>Всё гениальное - просто</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="res/projects/yo/slides/slide2.png" alt>
+                        <figcaption>Можно и по-русски</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="res/projects/yo/slides/slide3.png" alt>
+                        <figcaption>Богатая и понятная документация с примерами</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="res/projects/yo/slides/slide4.png" alt>
+                        <figcaption>Заря новой эры веб-дизайна</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="res/projects/yo/slides/slide5.png" alt>
+                        <figcaption>Всё на отступах</figcaption>
+                    </figure>
+                </figure>
+            </div>
+        </div>
+        <div class="panel">
+            <h2>Стек технологий</h2>
+            <div class="tech_list">
+                <div class="tech_card" onclick="goToPage('https://github.com/PenzaStreetGames/Yo')">
+                    <img class="tech_img" src="res/tech_icons/github_icon.png">
+                    <span>GitHub</span>
+                </div>
+                <div class="tech_card" onclick="goToPage('https://www.python.org/')">
+                    <img class="tech_img" src="res/tech_icons/python_icon.png">
+                    <span>Python</span>
+                </div>
+                <div class="tech_card" onclick="goToPage('https://www.qt.io/')">
+                    <img class="tech_img" src="res/tech_icons/qt_icon.png">
+                    <span>Qt</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <h2>История создания и авторы</h2>
+            <p>Автор: Павел Соломатин</p>
+            <p>Активная разработка: 2019-2020 годы</p>
+            <p>
+                Во время изучения языка программирования Python в Яндекс.Лицее автора посещали смешанные чувства.
+                С одной стороны, питон оказался простым и лаконичным языком. С другой, в нём было много странностей и
+                недоработок. Тогда-то и появилась идея создания собственного языка.
+            </p>
+            <p>
+                Весной 2019 года был написан транслятор языка в байт-код, и только летом была написана виртуальная машина,
+                способная его воспроизвести. К осени была готова и среда разработки YoCode.
+            </p>
+            <p>
+                Новым толчком в развитии идеи нового языка послужил транслятор из разметки на отступах в html - Yo Struct.
+                Он был написан в июне 2020 года.
+            </p>
+        </div>
+        <div class="panel">
+            <h2>Перспективы и комментарий автора</h2>
+            <p>
+                Язык был реализован в минимальной рабочей версии и выполняет операции на уровне языка Паскаль. От том,
+                что виртуальная машина языка написана на Питоне, страшно думать, потому что производительность языка
+                очень резко падает по сравнению с другими языками.
+            </p>
+            <p>
+                Yo Struct имеет все шансы на дальнейшее развитие, так как следом за HTML предполагалось написать такие же
+                трансляторы для CSS и JavaScript. Этот набор технологий является идеей проекта ближнего будущего.
+            </p>
+            <blockquote>
+                Объять необъятное. Много задач - один инструмент. В общем, не язык, а сказка.
+            </blockquote>
+        </div>
+        <div class="panel">
+            <div class="pages_list_header">
+                <h2>Страницы</h2>
+            </div>
+            <div class="pages_list">
+                <a href="../index.html">
+                    Главная
+                </a>
+                <a href="author.html">
+                    Об авторе
+                </a>
+                <a href="turret_master.html">
+                    Turret Master
+                </a>
+                <a href="trigger_trap.html">
+                    Trigger Trap
+                </a>
+                <a href="red_dream.html">
+                    Red Dream
+                </a>
+                <a href="quest_text.html">
+                    Quest Text
+                </a>
+                <b>
+                    Yo
+                </b>
+                <a href="prog_opros.html">
+                    Prog Opros
+                </a>
+                <a href="web_story.html">
+                    Web Story
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span class="copyright">
+        © Павел Соломатин 2021 год. Все права защищены
+        </span>
+        <div class="footer_flex">
+            <span>Ищите меня в:</span>
+            <div class="link_icons_list">
+                <a href="https://github.com/PenzaStreetGames">
+                    <img class="link_icon" src="res/tech_icons/github_icon.png">
+                </a>
+                <a href="https://vk.com/crave_ozer_man">
+                    <img class="link_icon" src="res/link_icons/vk_icon.png">
+                </a>
+                <a href="https://t.me/crave_ozer_man/">
+                    <img class="link_icon" src="res/link_icons/telegram_icon.png">
+                </a>
+                <a href="https://www.instagram.com/craveozerman">
+                    <img class="link_icon" src="res/link_icons/instagram_icon.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    function goToPage(url) {
+        document.location.href = url;
+    }
+</script>
 </body>
 </html>

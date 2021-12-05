@@ -14,7 +14,18 @@
 <body>
 <div id="wrapper">
     <header>
+        <span>
         WebStory Портфолио
+        </span>
+        <a href="../index.html">
+            Главная
+        </a>
+        <a href="index.html#projects_anchor">
+            Проекты
+        </a>
+        <a href="author.html">
+            Об авторе
+        </a>
     </header>
     <main>
         <div class="panel">
@@ -51,12 +62,12 @@
             <p>Внизу карточки каждого проекта есть список использованных технологий. Перейти на страницы репозиториев
                 можно кликнув по иконке github. Прочие значки технологий ведут на их официальные страницы.</p>
         </div>
-        <div class="panel">
+        <div id="projects_anchor" class="panel">
             <h2>Проекты</h2>
         </div>
         <div class="card_list">
             <div onclick="goToPage('pages/turret_master.html')" class="panel card choose">
-                <span class="card_name">Turret Master</span>
+                <h2 class="card_name">Turret Master</h2>
                 <div class="project_icon_panel">
                     <img class="project_icon" src="pages/res/project_icons/turret_master_icon.png">
                 </div>
@@ -68,7 +79,7 @@
                 </a>
             </div>
             <div onclick="goToPage('pages/trigger_trap.html')" class="panel card choose">
-                <span class="card_name">Trigger Trap</span>
+                <h2 class="card_name">Trigger Trap</h2>
                 <div class="project_icon_panel">
                     <img class="project_icon" src="pages/res/project_icons/trigger_trap_icon.png">
                 </div>
@@ -86,7 +97,7 @@
                 </a>
             </div>
             <div onclick="goToPage('pages/red_dream.html')" class="panel card choose">
-                <span class="card_name">Red Dream</span>
+                <h2 class="card_name">Red Dream</h2>
                 <div class="project_icon_panel">
                     <img class="project_icon" src="pages/res/project_icons/red_dream_icon.png">
                 </div>
@@ -96,12 +107,12 @@
                 <a href="https://www.python.org/">
                     <img class="tech_icon" src="pages/res/tech_icons/python_icon.png">
                 </a>
-                <a href="https://yandex.ru/alice>
-                    <img class=" tech_icon" src="pages/res/tech_icons/alice_icon.png">
+                <a href="https://yandex.ru/alice">
+                    <img class="tech_icon" src="pages/res/tech_icons/alice_icon.png">
                 </a>
             </div>
             <div onclick="goToPage('pages/quest_text.html')" class="panel card choose">
-                <span class="card_name">Quest Text</span>
+                <h2 class="card_name">Quest Text</h2>
                 <div class="project_icon_panel">
                     <img class="project_icon" src="pages/res/project_icons/text_quest_icon.png">
                 </div>
@@ -116,7 +127,7 @@
                 </a>
             </div>
             <div onclick="goToPage('pages/yo.html')" class="panel card choose">
-                <span class="card_name">Yo</span>
+                <h2 class="card_name">Yo</h2>
                 <div class="project_icon_panel">
                     <img class="project_icon" src="pages/res/project_icons/yo_icon.png">
                 </div>
@@ -131,7 +142,7 @@
                 </a>
             </div>
             <div onclick="goToPage('pages/prog_opros.html')" class="panel card choose">
-                <span class="card_name">Prog Opros</span>
+                <h2 class="card_name">Prog Opros</h2>
                 <div class="project_icon_panel">
                     <img class="project_icon" src="pages/res/project_icons/prog_opros_icon.png">
                 </div>
@@ -143,7 +154,7 @@
                 </a>
             </div>
             <div onclick="goToPage('pages/web_story.html')" class="panel card choose">
-                <span class="card_name">Web story</span>
+                <h2 class="card_name">Web story</h2>
                 <div class="project_icon_panel">
                     <img class="project_icon" src="pages/res/project_icons/web_story_icon.png">
                 </div>
@@ -161,10 +172,42 @@
                 </a>
             </div>
         </div>
+        <div class="panel">
+            <div class="pages_list_header">
+                <h2>Страницы</h2>
+            </div>
+            <div class="pages_list">
+                <b>Главная</b>
+                <a href="author.html">
+                    Об авторе
+                </a>
+                <a href="pages/turret_master.html">
+                    Turret Master
+                </a>
+                <a href="trigger_trap.html">
+                    Trigger Trap
+                </a>
+                <a href="red_dream.html">
+                    Red Dream
+                </a>
+                <a href="quest_text.html">
+                    Quest Text
+                </a>
+                <a href="yo.html">
+                    Yo
+                </a>
+                <a href="prog_opros.html">
+                    Prog Opros
+                </a>
+                <a href="web_story.html">
+                    Web Story
+                </a>
+            </div>
+        </div>
     </main>
     <footer>
         <span class="copyright">
-        (с) Павел Соломатин 2021 год. Все права защищены
+        © Павел Соломатин 2021 год. Все права защищены
         </span>
         <div class="footer_flex">
             <span>Ищите меня в:</span>
@@ -175,10 +218,10 @@
                 <a href="https://vk.com/crave_ozer_man">
                     <img class="link_icon" src="pages/res/link_icons/vk_icon.png">
                 </a>
-                <a href="https://www.instagram.com/craveozerman/">
+                <a href="https://t.me/crave_ozer_man/">
                     <img class="link_icon" src="pages/res/link_icons/telegram_icon.png">
                 </a>
-                <a href="https://t.me/crave_ozer_man">
+                <a href="https://www.instagram.com/craveozerman">
                     <img class="link_icon" src="pages/res/link_icons/instagram_icon.png">
                 </a>
             </div>

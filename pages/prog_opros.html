@@ -3,8 +3,180 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SourceCodePro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/main_page.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/project_page.css">
 </head>
 <body>
-
+<div id="wrapper">
+    <header>
+        <span>
+        WebStory Портфолио
+        </span>
+        <a href="../index.html">
+            Главная
+        </a>
+        <a href="../index.html#projects_anchor">
+            Проекты
+        </a>
+        <a href="author.html">
+            Об авторе
+        </a>
+    </header>
+    <main>
+        <div class="panel project_preview">
+            <div class="project_icon_panel">
+                <img class="project_icon" src="res/project_icons/prog_opros_icon.png">
+            </div>
+            <div>
+                <h1>Prog Opros</h1>
+                <span>Исследование по результатам опроса программистов</span>
+            </div>
+            <a class="source_card" href="https://disk.yandex.ru/d/EIYBX4h7BNvM7w">
+                <img class="source_img" src="res/tech_icons/yandex_disk_icon.png">
+                Ссылка на релиз
+            </a>
+        </div>
+        <div class="panel slider_panel">
+            <div id="captioned-gallery">
+                <figure class="slider">
+                    <figure>
+                        <img src="res/projects/prog_opros/slides/slide1.png" alt>
+                        <figcaption>Интуитивно понятный код на языке R</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="res/projects/prog_opros/slides/slide2.png" alt>
+                        <figcaption>Красивые и понятные графики</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="res/projects/prog_opros/slides/slide3.png" alt>
+                        <figcaption>Визуализация невизуализируемого</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="res/projects/prog_opros/slides/slide4.png" alt>
+                        <figcaption>Неожиданные выводы по распределению</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="res/projects/prog_opros/slides/slide5.png" alt>
+                        <figcaption>Правильная точная интерпретация данных</figcaption>
+                    </figure>
+                </figure>
+            </div>
+        </div>
+        <div class="panel">
+            <h2>Стек технологий</h2>
+            <div class="tech_list">
+                <div class="tech_card" onclick="goToPage('https://github.com/PenzaStreetGames/ProgOpros')">
+                    <img class="tech_img" src="res/tech_icons/github_icon.png">
+                    <span>GitHub</span>
+                </div>
+                <div class="tech_card" onclick="goToPage('https://www.r-project.org/')">
+                    <img class="tech_img" src="res/tech_icons/r_icon.png">
+                    <span>R</span>
+                </div>
+                <div class="tech_card" onclick="goToPage('https://forms.yandex.ru/cloud/5d4336b07effdd03528c193c/')">
+                    <img class="tech_img" src="res/tech_icons/yandex_forms_icon.png">
+                    <span>Яндекс.Формы</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <h2>История создания и авторы</h2>
+            <p>Автор: Павел Соломатин</p>
+            <p>Активная разработка: 2019-2020 годы</p>
+            <p>
+                Опрос являлся попыткой практического применения основ статистики, которые автор изучал в то время на
+                Степике. По каналам связи, оставшихся после Яндекс.Лицея и не только, было собрано больше 100 ответов.
+                Выборка так себе, но всё же.
+            </p>
+            <p>
+                Исследование было написано на языке R, и это было не самым лучшим технологическим решением. Хотя,
+                отчёт выглядит весьма сносно.
+            </p>
+        </div>
+        <div class="panel">
+            <h2>Перспективы и комментарий автора</h2>
+            <p>
+                Данный проект не имеет каких-либо значимых перспектив. Повторное исследование было бы логичнее проводить
+                с помощью какого-либо более современного инструмента анализа данных, например, с помощью Питона и библиотеки
+                Pandas.
+            </p>
+            <p>
+                В отчёте по опросу было сформировано около 50 графиков с не совсем очевидными зависимостями. Не которые
+                из них стоят внимания читателя, некоторые не очень.
+            </p>
+            <blockquote>
+                Странные люди эти программисты. И ответы у них интересные.
+            </blockquote>
+        </div>
+        <div class="panel">
+            <div class="pages_list_header">
+                <h2>Страницы</h2>
+            </div>
+            <div class="pages_list">
+                <a href="../index.html">
+                    Главная
+                </a>
+                <a href="author.html">
+                    Об авторе
+                </a>
+                <a href="turret_master.html">
+                    Turret Master
+                </a>
+                <a href="trigger_trap.html">
+                    Trigger Trap
+                </a>
+                <a href="red_dream.html">
+                    Red Dream
+                </a>
+                <a href="quest_text.html">
+                    Quest Text
+                </a>
+                <a href="yo.html">
+                    Yo
+                </a>
+                <b>
+                    Prog Opros
+                </b>
+                <a href="web_story.html">
+                    Web Story
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span class="copyright">
+        © Павел Соломатин 2021 год. Все права защищены
+        </span>
+        <div class="footer_flex">
+            <span>Ищите меня в:</span>
+            <div class="link_icons_list">
+                <a href="https://github.com/PenzaStreetGames">
+                    <img class="link_icon" src="res/tech_icons/github_icon.png">
+                </a>
+                <a href="https://vk.com/crave_ozer_man">
+                    <img class="link_icon" src="res/link_icons/vk_icon.png">
+                </a>
+                <a href="https://t.me/crave_ozer_man/">
+                    <img class="link_icon" src="res/link_icons/telegram_icon.png">
+                </a>
+                <a href="https://www.instagram.com/craveozerman">
+                    <img class="link_icon" src="res/link_icons/instagram_icon.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    function goToPage(url) {
+        document.location.href = url;
+    }
+</script>
 </body>
 </html>

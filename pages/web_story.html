@@ -3,8 +3,183 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SourceCodePro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/main_page.css">
+    <link rel="stylesheet" href="styles/slider.css">
+    <link rel="stylesheet" href="styles/project_page.css">
 </head>
 <body>
-
+<div id="wrapper">
+    <header>
+        <span>
+        WebStory Портфолио
+        </span>
+        <a href="../index.html">
+            Главная
+        </a>
+        <a href="../index.html#projects_anchor">
+            Проекты
+        </a>
+        <a href="author.html">
+            Об авторе
+        </a>
+    </header>
+    <main>
+        <div class="panel project_preview">
+            <div class="project_icon_panel">
+                <img class="project_icon" src="res/project_icons/web_story_icon.png">
+            </div>
+            <div>
+                <h1>Web Story</h1>
+                <span>Сайт-портфолио для курсовой работы</span>
+            </div>
+            <a class="source_card" href="https://github.com/PenzaStreetGames/WebStory">
+                <img class="source_img" src="res/tech_icons/github_icon.png">
+                Ссылка на исходники
+            </a>
+        </div>
+        <div class="panel slider_panel">
+            <div id="captioned-gallery">
+                <figure class="slider">
+                    <figure>
+                        <img src="res/projects/web_story/slides/slide1.png" alt>
+                        <figcaption>Современные решения адаптивного дизайна</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="res/projects/web_story/slides/slide2.png" alt>
+                        <figcaption>Раздел с автором</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="res/projects/web_story/slides/slide3.png" alt>
+                        <figcaption>Богоподобные слайдеры</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="res/projects/web_story/slides/slide4.png" alt>
+                        <figcaption>Комментарий автора к каждому проекту</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="res/projects/web_story/slides/slide5.png" alt>
+                        <figcaption>Контакты в футере сайта</figcaption>
+                    </figure>
+                </figure>
+            </div>
+        </div>
+        <div class="panel">
+            <h2>Стек технологий</h2>
+            <div class="tech_list">
+                <div class="tech_card" onclick="goToPage('https://github.com/PenzaStreetGames/WebStory')">
+                    <img class="tech_img" src="res/tech_icons/github_icon.png">
+                    <span>GitHub</span>
+                </div>
+                <div class="tech_card" onclick="goToPage('https://developer.mozilla.org/en-US/docs/Web/HTML')">
+                    <img class="tech_img" src="res/tech_icons/html_icon.png">
+                    <span>HTML</span>
+                </div>
+                <div class="tech_card" onclick="goToPage('https://developer.mozilla.org/en-US/docs/Web/CSS')">
+                    <img class="tech_img" src="res/tech_icons/css_icon.png">
+                    <span>CSS</span>
+                </div>
+                <div class="tech_card" onclick="goToPage('https://www.javascript.com/')">
+                    <img class="tech_img" src="res/tech_icons/javascript_icon.png">
+                    <span>Java Script</span>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <h2>История создания и авторы</h2>
+            <p>Авторы: Павел Соломатин</p>
+            <p>Активная разработка: 2021 год</p>
+            <p>
+                Проект создавался с целью защиты курсовой работы в третьем семестре обучения в бакалавриате. Дедлайн
+                сдачи отчёта стал известен за пол недели до его наступления. Были мобилизованы силы для его написания и
+                всё в итоге написано, хотя это и сказалось на его качестве. На момент написания, чем кончится эта
+                история - непонятно.
+            </p>
+            <p>
+                Эта страница является рекурсивной ссылкой на проект внутри самого себя.
+            </p>
+        </div>
+        <div class="panel">
+            <h2>Перспективы и комментарий автора</h2>
+            <p>
+                Главной перспективой развития проекта является совершенствования анимаций, стилизации и адаптивности.
+                Пока что все три пункта находятся на стадии глубокой разработки.
+            </p>
+            <p>
+                Для отчётных проектов прослеживается тенденция к более быстрому их написанию и некоторой мимолётности,
+                с которой, видимо, ничего нельзя поделать, в ускоряющемся ритме работы.
+            </p>
+            <blockquote>
+                У других и не такое принимали
+            </blockquote>
+        </div>
+        <div class="panel">
+            <div class="pages_list_header">
+                <h2>Страницы</h2>
+            </div>
+            <div class="pages_list">
+                <a href="../index.html">
+                    Главная
+                </a>
+                <a href="author.html">
+                    Об авторе
+                </a>
+                <a href="turret_master.html">
+                    Turret Master
+                </a>
+                <a href="trigger_trap.html">
+                    Trigger Trap
+                </a>
+                <a href="red_dream.html">
+                    Red Dream
+                </a>
+                <a href="quest_text.html">
+                    Quest Text
+                </a>
+                <a href="yo.html">
+                    Yo
+                </a>
+                <a href="prog_opros.html">
+                    Prog Opros
+                </a>
+                <b>
+                    Web Story
+                </b>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span class="copyright">
+        © Павел Соломатин 2021 год. Все права защищены
+        </span>
+        <div class="footer_flex">
+            <span>Ищите меня в:</span>
+            <div class="link_icons_list">
+                <a href="https://github.com/PenzaStreetGames">
+                    <img class="link_icon" src="res/tech_icons/github_icon.png">
+                </a>
+                <a href="https://vk.com/crave_ozer_man">
+                    <img class="link_icon" src="res/link_icons/vk_icon.png">
+                </a>
+                <a href="https://t.me/crave_ozer_man/">
+                    <img class="link_icon" src="res/link_icons/telegram_icon.png">
+                </a>
+                <a href="https://www.instagram.com/craveozerman">
+                    <img class="link_icon" src="res/link_icons/instagram_icon.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    function goToPage(url) {
+        document.location.href = url;
+    }
+</script>
 </body>
 </html>
