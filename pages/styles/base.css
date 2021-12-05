@@ -114,17 +114,19 @@ footer {
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    padding: 20px;
 }
 
 header a {
     padding: 0.5vw;
     border-radius: var(--borderRadius);
     background-color: var(--defaultPrimaryColor);
+    text-decoration: none;
 }
 
 main {
     box-sizing: border-box;
-    min-height: 90vh;
+    min-height: 80vh;
 }
 
 button {
@@ -181,6 +183,10 @@ button a:hover {
 
 .footer_flex span {
     padding: 0.5vw;
+    text-align: center;
+}
+
+footer span {
     text-align: center;
 }
 

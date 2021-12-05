@@ -24,7 +24,7 @@ html {
     background-size: cover;
 }
 
-div.panel {
+div.panel, nav.panel {
     background-color: var(--secondPanelColor);
     border-radius: var(--borderRadius);
     padding: 1vw;
@@ -59,7 +59,7 @@ main {
     min-width: 200px;
     min-height: 200px;
     height: 20vw;
-    margin: 4vw;
+    margin: 2vw;
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(4, 1fr);
     cursor: pointer;
@@ -102,10 +102,10 @@ main {
 }
 
 .author_photo {
-    width: 20vw;
-    height: 25vw;
+    width: 10vw;
+    height: 10vw;
     object-fit: cover;
-    border-radius: var(--borderRadius);
+    border-radius: 50%;
 }
 
 .more_button_div {

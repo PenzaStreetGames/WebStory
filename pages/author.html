@@ -3,8 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SourceCodePro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/main_page.css">
+    <link rel="stylesheet" href="styles/author.css">
 </head>
 <body>
-
+<div id="wrapper">
+    <header>
+        <span>
+        WebStory Портфолио
+        </span>
+        <a href="../index.html">
+            Главная
+        </a>
+        <a href="index.html#projects_anchor">
+            Проекты
+        </a>
+        <a href="author.html">
+            Об авторе
+        </a>
+    </header>
+    <main>
+        <div class="panel">
+            <h1>Об авторе</h1>
+        </div>
+        <div class="panel">
+            <h2>Обо мне</h2>
+            <div class="flex_row">
+                <img class="author_photo" src="res/images/author.png">
+                <div>
+                    <p>Привет! Меня зовут Паша Соломатин. Я учусь в РТУ МИРЭА и занимаюсь программированием.
+                        К выполнению своих заданий я подхожу ответственно и стараюсь доделывать всё до конца.
+                        Программирование мне нравится, а отчётность не очень. Но без неё, видимо, никуда. Этот сайт -
+                        сам по себе является отчётностью.
+                    </p>
+                    <p>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="panel">
+            <h2>Пожертвования</h2>
+            <p>Если хотите поддержать меня в моих творческих начинаниях, напишите мне в личку приятное сообщение.</p>
+            <p>Если у вас не хватает фантазии на приятное сообщение в личку, заполните и отправьте форму ниже</p>
+        </div>
+        <form class="bank_card_div">
+            <label for="card_number">Номер карты</label><input id="card_number" type="text">
+            <label for="valid_month">Месяц</label><input id="valid_month" type="text">
+            <label for="valid_year">Год</label><input id="valid_year" type="text">
+            <label for="cvv">CVV</label><input id="cvv" type="text">
+            <button type="submit">Задонатить</button>
+        </form>
+    </main>
+    <nav class="panel">
+        <div class="pages_list_header">
+            <h2>Страницы</h2>
+        </div>
+        <div class="pages_list">
+            <a href="../index.html">
+                Главная
+            </a>
+            <b>
+                Об авторе
+            </b>
+            <a href="turret_master.html">
+                Turret Master
+            </a>
+            <a href="trigger_trap.html">
+                Trigger Trap
+            </a>
+            <a href="red_dream.html">
+                Red Dream
+            </a>
+            <a href="quest_text.html">
+                Quest Text
+            </a>
+            <a href="yo.html">
+                Yo
+            </a>
+            <a href="prog_opros.html">
+                Prog Opros
+            </a>
+            <a href="web_story.html">
+                Web Story
+            </a>
+        </div>
+    </nav>
+    <footer>
+        <span class="copyright">
+        © Павел Соломатин 2021 год. Все права защищены
+        </span>
+        <div class="footer_flex">
+            <span>Ищите меня в:</span>
+            <div class="link_icons_list">
+                <a href="https://github.com/PenzaStreetGames">
+                    <img class="link_icon" src="res/tech_icons/github_icon.png">
+                </a>
+                <a href="https://vk.com/crave_ozer_man">
+                    <img class="link_icon" src="res/link_icons/vk_icon.png">
+                </a>
+                <a href="https://t.me/crave_ozer_man/">
+                    <img class="link_icon" src="res/link_icons/telegram_icon.png">
+                </a>
+                <a href="https://www.instagram.com/craveozerman">
+                    <img class="link_icon" src="res/link_icons/instagram_icon.png">
+                </a>
+            </div>
+        </div>
+    </footer>
+</div>
+<script>
+    function goToPage(url) {
+        document.location.href = url;
+    }
+</script>
 </body>
 </html>
