@@ -35,22 +35,6 @@ a:hover {
     color: var(--linkHowerColor);
 }
 
-
-
-/*@media (max-width: 2000px) {*/
-/*    p, a, b, span, figcaption, blockquote, label, input, button {*/
-/*        font-size: 18px;*/
-/*    }*/
-/*    header *, h1 {*/
-/*        font-size: 32px;*/
-/*    }*/
-/*    footer *, h2 {*/
-/*        font-size: 24px;*/
-/*    }*/
-/*}*/
-
-
-
 header, footer {
     background-color: var(--darkPrimaryColor);
     border-radius: var(--borderRadius);
@@ -166,7 +150,3 @@ footer span {
 .pages_list * {
     margin: 0.5vw;
 }
-
-
-
-
