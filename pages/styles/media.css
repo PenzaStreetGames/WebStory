@@ -2,37 +2,29 @@
     .content, .content *, .content_list * {
         font-size: 30px;
     }
-
     .label, .labels_list * {
         font-size: 42px;
     }
 }
-
 @media (max-width: 1200px) {
-
     .flex_row {
         flex-direction: column;
     }
     .content, .content *, .content_list * {
-        font-size: 30px;
+        font-size: 28px;
     }
-
     .label, .labels_list * {
-        font-size: 42px;
+        font-size: 40px;
     }
 }
-
 @media (max-width: 768px)  {
     .flex_row {
         flex-direction: column;
     }
-
     .content, .content_list * {
         font-size: 24px;
     }
-
     .label, .labels_list * {
         font-size: 36px;
     }
-
 }
