@@ -27,8 +27,8 @@ html {
 div.panel, nav.panel {
     background-color: var(--secondPanelColor);
     border-radius: var(--borderRadius);
-    padding: 1vw;
-    margin: 1vw;
+    padding: var(--panelPadding);
+    margin: var(--panelMargin);
     transition: var(--quickAnimationTime);
 }
 
@@ -36,7 +36,7 @@ div.choose:hover {
     background-color: var(--thirdPanelColor);
     width: 24vw;
     height: 24vw;
-    margin: 0vw;
+    margin: 0;
     transition: 0.5s;
 }
 
@@ -59,7 +59,7 @@ main {
     min-width: 400px;
     min-height: 400px;
     height: 20vw;
-    margin: 2vw;
+    margin: 20px;
     display: grid;
     grid-template: repeat(4, 1fr) / repeat(4, 1fr);
     cursor: pointer;

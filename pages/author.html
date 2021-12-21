@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=SourceCodePro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/main_page.css">
@@ -39,7 +40,8 @@
             <div class="flex_row">
                 <img class="author_photo" src="res/images/author.png">
                 <div>
-                    <p class="content">Привет! Меня зовут Паша Соломатин. Я учусь в РТУ МИРЭА и занимаюсь программированием.
+                    <p class="content">Привет! Меня зовут Паша Соломатин. Я учусь в РТУ МИРЭА и занимаюсь
+                        программированием.
                         К выполнению своих заданий я подхожу ответственно и стараюсь доделывать всё до конца.
                         Программирование мне нравится, а отчётность не очень. Но без неё, видимо, никуда. Этот сайт -
                         сам по себе является отчётностью.
@@ -52,13 +54,13 @@
                 </div>
             </div>
         </div>
-        <div class="panel">
+        <div class="panel flex_col center">
             <h2 class="label">Напишите мне</h2>
-                <label class="content" for="message_area">Напишите пару красивых слов</label>
-                <textarea class="content" id="message_area"></textarea>
-                <button id="submit_button" class="content" onclick="attemptIncrement()">
-                    Отправить
-                </button>
+            <label class="content" for="message_area">Напишите пару красивых слов</label>
+            <textarea class="content" id="message_area"></textarea>
+            <button id="submit_button" class="content" onclick="attemptIncrement()">
+                Отправить
+            </button>
         </div>
         <div class="panel" id="warning_window">
             <p id="warning_message" class="content"></p>

@@ -5,8 +5,15 @@
     --defaultPrimaryColor: #4449a9;
     --lightPrimaryColor: #BDBDBD;
     --linkHowerColor: #448AFF;
+
     --quickAnimationTime: 0.5s;
+
     --mediumShadow: 0.5vw 0.5vw 0.5vw rgba(0, 0, 0, 0.2);
+
+    --panelPadding: 20px;
+    --panelMargin: 20px;
+    --innerPadding: 10px;
+    --innerMargin: 10px;
 }
 
 body {
@@ -47,7 +54,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding: 1vw;
+    padding: var(--panelPadding);
 }
 
 footer {
@@ -55,7 +62,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: var(--panelPadding);
 }
 
 header a {
@@ -99,7 +106,16 @@ button a:hover {
 }
 
 .flex_row * {
-    margin: 1vw;
+    margin: var(--panelMargin);
+}
+
+.flex_col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_col.center {
+    align-items: center;
 }
 
 .link_icons_list {
@@ -144,7 +160,7 @@ footer span {
 .pages_list {
     display: flex;
     flex-wrap: wrap;
-    padding: 1vw;
+    padding: var(--panelPadding);
 }
 
 .pages_list * {

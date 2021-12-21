@@ -12,6 +12,7 @@ function sendMessage() {
         warning("Спасибо за пару красивых слов :)");
     else
         warning("Вы забыли написать пару красивых слов");
+    setTimeout(hideWarning, 2000);
 }
 
 function warning(message) {
