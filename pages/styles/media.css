@@ -3,7 +3,7 @@
         font-size: 2rem;
     }
     .label, .labels_list * {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
 @media (max-width: 1200px) {
@@ -11,10 +11,10 @@
         flex-direction: column;
     }
     .content, .content *, .content_list * {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .label, .labels_list * {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 }
 @media (max-width: 768px)  {
@@ -22,9 +22,9 @@
         flex-direction: column;
     }
     .content, .content_list * {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .label, .labels_list * {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
