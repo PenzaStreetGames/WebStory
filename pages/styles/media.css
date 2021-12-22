@@ -28,3 +28,14 @@
         font-size: 7.5vw;
     }
 }
+@media (orientation: portrait) {
+    .flex_row {
+        flex-direction: column;
+    }
+    .content, .content_list * {
+        font-size: 5vw;
+    }
+    .label, .labels_list * {
+        font-size: 7.5vw;
+    }
+}
