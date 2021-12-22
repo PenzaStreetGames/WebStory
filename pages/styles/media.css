@@ -11,10 +11,10 @@
         flex-direction: column;
     }
     .content, .content *, .content_list * {
-        font-size: 20px;
+        font-size: 3vw;
     }
     .label, .labels_list * {
-        font-size: 30px;
+        font-size: 4.5vw;
     }
 }
 @media (max-width: 768px)  {
@@ -22,9 +22,9 @@
         flex-direction: column;
     }
     .content, .content_list * {
-        font-size: 28px;
+        font-size: 4vw;
     }
     .label, .labels_list * {
-        font-size: 42px;
+        font-size: 6vw;
     }
 }
