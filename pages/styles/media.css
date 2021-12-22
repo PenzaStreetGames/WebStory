@@ -22,9 +22,9 @@
         flex-direction: column;
     }
     .content, .content_list * {
-        font-size: 4vw;
+        font-size: 6vw;
     }
     .label, .labels_list * {
-        font-size: 6vw;
+        font-size: 9vw;
     }
 }
